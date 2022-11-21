@@ -104,6 +104,8 @@ void CAN1_filterconfig(int msgboxnumber, int id)
 #endif
     CAN1->sFilterRegister[msgboxnumber].FR1 = FilterMaskIdHigh;
     CAN1->sFilterRegister[msgboxnumber].FR2 = FilterMaskIdLow;
+    
+    x[msgboxnumber] = CAN1->sFilterRegister[msgboxnumber].FR1 << 16;
 }
 
 void CAN2config(void)
@@ -119,110 +121,149 @@ void CAN2config(void)
     CAN2->IER |= 0x1;  
     NVIC->ISER[1] |= (1 << 31);
 }
+
 // mailbox identifier configuration
 
-void CAN_AddRxMessage(int mailboxnumber, unsigned int id)
+// unsigned int testvalue = 0;
+
+
+// void CAN1_RX0_IRQHandler(void)
+// {
+//     NVIC->ISER[0] = 0x10000000;
+//     CAN1->IER = 0x0;
+//     RxIRQswitch = GetRxIRQswitch();
+
+//     switch (RxIRQswitch)
+//     {
+//     case BMSone:
+//         CAN_AddRxMessage(BMSone, 0x142801B0);
+//         break;
+//     case BMStwo:
+//         CAN_AddRxMessage(BMStwo, 0x142802B0);
+//         break;
+//     case BMSthree:
+//         CAN_AddRxMessage(BMSthree, 0x142803B0);
+//         break;
+//         /*
+//      case BMSfour:
+//          CAN_AddRxMessage(BMSfour, 0x142804B0);
+//          break;    
+//      case BMSfive:
+//          CAN_AddRxMessage(BMSfive, 0x142805B0);
+//          break;    
+//      case BMSsix:
+//          CAN_AddRxMessage(BMSsix, 0x142806B0);
+//          break;
+//          */
+//     }
+//   CAN2->TSR |= (1 << 8);
+//   CAN1->RF0R = ( CAN1->RF0R & (unsigned long)0xFFFFFFFF) | 0x20; 
+// }
+/* ------------------------------------------- */
+unsigned int testvalue = 0;
+int GetRxIRQswitch(void)
 {
-    // if (( CAN1->RF0R & CAN_RF0R_FULL0_Pos) == 1)
-    // {
-    //   while( CAN1->RF0R != 0x0)
-    //   {
-    //     CAN1->RF0R = ( CAN1->RF0R & (unsigned long)0xFFFFFFFF) | 0x20;
-    //   }
-    // }
+    // #if (debugging == 1)
 
-    globalCANdata[mailboxnumber].data[0] = CAN1->sFIFOMailBox[0].RDLR >> 0;
-    globalCANdata[mailboxnumber].data[1] = CAN1->sFIFOMailBox[0].RDLR >> 8;
-    globalCANdata[mailboxnumber].data[2] = CAN1->sFIFOMailBox[0].RDLR >> 16;
-    globalCANdata[mailboxnumber].data[3] = CAN1->sFIFOMailBox[0].RDLR >> 24;
-
-    globalCANdata[mailboxnumber].data[4] = CAN1->sFIFOMailBox[0].RDLR >> 0;
-    globalCANdata[mailboxnumber].data[5] = CAN1->sFIFOMailBox[0].RDLR >> 8;
-    globalCANdata[mailboxnumber].data[6] = CAN1->sFIFOMailBox[0].RDLR >> 16;
-    globalCANdata[mailboxnumber].data[7] = CAN1->sFIFOMailBox[0].RDLR >> 24;
-
-
-    CAN2->sTxMailBox[0].TIR = (( id << 3 ) | 0x4);
-    //CAN2->sTxMailBox[0].TIR = (( 0x3b << 21 ) | 0x0 );
-    CAN2->sTxMailBox[0].TDTR = ( CAN2->sTxMailBox[0].TDTR & (unsigned long)0xfffffff0)| 0x5;
-    CAN2->sTxMailBox[0].TDLR = ((uint32_t)globalCANdata[mailboxnumber].data[0] << 0 | 
-            (uint32_t)globalCANdata[mailboxnumber].data[1] << 8 |
-            (uint32_t)globalCANdata[mailboxnumber].data[2] << 16 |
-            (uint32_t)globalCANdata[mailboxnumber].data[3] << 24 ) ;
-    CAN2->sTxMailBox[0].TDHR = ((uint32_t)globalCANdata[mailboxnumber].data[4] << 0 | 
-            (uint32_t)globalCANdata[mailboxnumber].data[5] << 8 |
-            (uint32_t)globalCANdata[mailboxnumber].data[6] << 16 |
-            (uint32_t)globalCANdata[mailboxnumber].data[7] << 24 ) ;
-    CAN2->sTxMailBox[0].TIR |= 0x1;
-
-    CAN2->TSR |= (1 << 8);
-    CAN1->RF0R = ( CAN1->RF0R & (unsigned long)0xFFFFFFFF) | 0x20;  
+    // #else
+    //     return testvalue = 8 + ( ((CAN1->sFIFOMailBox[0].RIR >> 8) - 0xD) / 8);
+    // #endif
 }
 
-unsigned int testvalue = 0;
 
-int GetRxIRQswitch()
+void CAN_AddRxMessage(int mailboxnumber)
 {
-#if (debugging == 1)
-    return testvalue = 0;
-#else
-    return testvalue = 8 + ( ((CAN1->sFIFOMailBox[0].RIR >> 8) - 0xD) / 8); 
-#endif
+        globalCANdata[mailboxnumber].data[0] = CAN1->sFIFOMailBox[0].RDLR >> 0;
+        globalCANdata[mailboxnumber].data[1] = CAN1->sFIFOMailBox[0].RDLR >> 8;
+        globalCANdata[mailboxnumber].data[2] = CAN1->sFIFOMailBox[0].RDLR >> 16;
+        globalCANdata[mailboxnumber].data[3] = CAN1->sFIFOMailBox[0].RDLR >> 24;
+
+        globalCANdata[mailboxnumber].data[4] = CAN1->sFIFOMailBox[0].RDHR >> 0;
+        globalCANdata[mailboxnumber].data[5] = CAN1->sFIFOMailBox[0].RDHR >> 8;
+        globalCANdata[mailboxnumber].data[6] = CAN1->sFIFOMailBox[0].RDHR >> 16;
+        globalCANdata[mailboxnumber].data[7] = CAN1->sFIFOMailBox[0].RDHR >> 24;
+          //CAN1->RF0R = ( CAN1->RF0R & (unsigned long)0xFFFFFFFF) | 0x20;
+}
+
+void CAN_TxMessage(int mailboxnumber, unsigned int id)
+{
+          CAN2->sTxMailBox[0].TIR = (( id << 3 ) | 0x4);
+        //CAN2->sTxMailBox[0].TIR = (( 0x3b << 21 ) | 0x0 );
+        CAN2->sTxMailBox[0].TDTR = ( CAN2->sTxMailBox[0].TDTR & (unsigned long)0xfffffff0)| 0x8;
+
+        CAN2->sTxMailBox[0].TDLR = ((uint32_t)globalCANdata[mailboxnumber].data[0] << 0 | 
+                                    (uint32_t)globalCANdata[mailboxnumber].data[1] << 8 |
+                                    (uint32_t)globalCANdata[mailboxnumber].data[2] << 16 |
+                                    (uint32_t)globalCANdata[mailboxnumber].data[3] << 24 ) ;
+        CAN2->sTxMailBox[0].TDHR = ((uint32_t)globalCANdata[mailboxnumber].data[4] << 0 | 
+                                    (uint32_t)globalCANdata[mailboxnumber].data[5] << 8 |
+                                    (uint32_t)globalCANdata[mailboxnumber].data[6] << 16 |
+                                    (uint32_t)globalCANdata[mailboxnumber].data[7] << 24 ) ;
+        CAN2->sTxMailBox[0].TIR |= 0x1;
 }
 
 void CAN1_RX0_IRQHandler(void)
 {
+    NVIC->ISER[0] = 0x10000000;
     CAN1->IER = 0x0;
-    RxIRQswitch = GetRxIRQswitch();
+    //RxIRQswitch = GetRxIRQswitch();
+        if (CAN1_RF0R == x[0])
+        {
+            RxIRQswitch =  1;
+        }
+        else if (CAN1_RF0R == x[1])
+        {
+            RxIRQswitch =  2;
+        }
+        else if (CAN1_RF0R == x[2])
+        {
+            RxIRQswitch =  3;
+        }
 
     switch (RxIRQswitch)
     {
     case BMSone:
-        CAN_AddRxMessage(BMSone, 0x142801B0);
+        CAN_AddRxMessage(0);
+        CAN_TxMessage(0,0x142801B0);
         break;
     case BMStwo:
-        CAN_AddRxMessage(BMStwo, 0x142802B0);
+        CAN_AddRxMessage(1);
+        CAN_TxMessage(1,0x142802B0);
         break;
     case BMSthree:
-        CAN_AddRxMessage(BMSthree, 0x142803B0);
+        CAN_AddRxMessage(2);
+        CAN_TxMessage(2,0x142803B0); 
         break;
         /*
-case BMSfour:
-CAN_AddRxMessage(BMSfour, 0x142804B0);
-break;    
-case BMSfive:
-CAN_AddRxMessage(BMSfive, 0x142805B0);
-break;    
-case BMSsix:
-CAN_AddRxMessage(BMSsix, 0x142806B0);
-break;
+     case BMSfour:
+         CAN_AddRxMessage(BMSfour, 0x142804B0);
+         break;    
+     case BMSfive:
+         CAN_AddRxMessage(BMSfive, 0x142805B0);
+         break;    
+     case BMSsix:
+         CAN_AddRxMessage(BMSsix, 0x142806B0);
+         break;
          */
     }
+  CAN1->RF0R = ( CAN1->RF0R & (unsigned long)0xFFFFFFFF) | 0x20; 
+  CAN2->TSR |= (1 << 8);
+        CAN2->TSR &= 0xFFFFFFFC;
+      CAN1->IER = (CAN1->IER & (unsigned long)0xFFFFFFFF) | 0x0000000E; // interrupt enable register
+
 }
-
-void CAN2_TX_IRQHandler(void)
-{
-    //CAN2->TSR &= 0xFFFFFFFC;
-    CAN1->IER = (CAN1->IER & (unsigned long)0xFFFFFFFF) | 0x0000000E; // interrupt enable register
-    // need test
-}
-
-
-
-
+///////
 // void CAN1_RX0_IRQHandler(void)
 // {
 //   NVIC->ISER[0] = 0x10000000;
 //   CAN1->IER = 0x0;
 
-//   if (( CAN1->RF0R & CAN_RF0R_FULL0_Pos) == 1)
+//   if ( (( CAN1->RF0R & CAN_RF0R_FULL0_Pos) == 1) || (CAN1->RF0R & CAN_RF0R_FMP0) > 0)
 //   {
 //     while( CAN1->RF0R != 0x0)
 //     {
 //       CAN1->RF0R = ( CAN1->RF0R & (unsigned long)0xFFFFFFFF) | 0x20;
-//       LED_OnOff(0);
-//     }
-//   }
+
 
 //   if ( CAN1_RF0R == x[0])
 //   {
@@ -231,10 +272,10 @@ void CAN2_TX_IRQHandler(void)
 //     globalCANdata[0].data[2] = CAN1->sFIFOMailBox[0].RDLR >> 16;
 //     globalCANdata[0].data[3] = CAN1->sFIFOMailBox[0].RDLR >> 24;
 
-//     globalCANdata[0].data[4] = CAN1->sFIFOMailBox[0].RDLR >> 0;
-//     globalCANdata[0].data[5] = CAN1->sFIFOMailBox[0].RDLR >> 8;
-//     globalCANdata[0].data[6] = CAN1->sFIFOMailBox[0].RDLR >> 16;
-//     globalCANdata[0].data[7] = CAN1->sFIFOMailBox[0].RDLR >> 24;
+//     globalCANdata[0].data[4] = CAN1->sFIFOMailBox[0].RDHR >> 0;
+//     globalCANdata[0].data[5] = CAN1->sFIFOMailBox[0].RDHR >> 8;
+//     globalCANdata[0].data[6] = CAN1->sFIFOMailBox[0].RDHR >> 16;
+//     globalCANdata[0].data[7] = CAN1->sFIFOMailBox[0].RDHR >> 24;
 
 //     mailboxFLAG = 0;
 //   }
@@ -246,10 +287,10 @@ void CAN2_TX_IRQHandler(void)
 //     globalCANdata[1].data[2] = CAN1->sFIFOMailBox[0].RDLR >> 16;
 //     globalCANdata[1].data[3] = CAN1->sFIFOMailBox[0].RDLR >> 24;
 
-//     globalCANdata[1].data[4] = CAN1->sFIFOMailBox[0].RDLR >> 0;
-//     globalCANdata[1].data[5] = CAN1->sFIFOMailBox[0].RDLR >> 8;
-//     globalCANdata[1].data[6] = CAN1->sFIFOMailBox[0].RDLR >> 16;
-//     globalCANdata[1].data[7] = CAN1->sFIFOMailBox[0].RDLR >> 24;
+//     globalCANdata[1].data[4] = CAN1->sFIFOMailBox[0].RDHR >> 0;
+//     globalCANdata[1].data[5] = CAN1->sFIFOMailBox[0].RDHR >> 8;
+//     globalCANdata[1].data[6] = CAN1->sFIFOMailBox[0].RDHR >> 16;
+//     globalCANdata[1].data[7] = CAN1->sFIFOMailBox[0].RDHR >> 24;
 
 //     mailboxFLAG = 1;
 //   }
@@ -261,68 +302,129 @@ void CAN2_TX_IRQHandler(void)
 //     globalCANdata[2].data[2] = CAN1->sFIFOMailBox[0].RDLR >> 16;
 //     globalCANdata[2].data[3] = CAN1->sFIFOMailBox[0].RDLR >> 24;
 
-//     globalCANdata[2].data[4] = CAN1->sFIFOMailBox[0].RDLR >> 0;
-//     globalCANdata[2].data[5] = CAN1->sFIFOMailBox[0].RDLR >> 8;
-//     globalCANdata[2].data[6] = CAN1->sFIFOMailBox[0].RDLR >> 16;
-//     globalCANdata[2].data[7] = CAN1->sFIFOMailBox[0].RDLR >> 24;
+//     globalCANdata[2].data[4] = CAN1->sFIFOMailBox[0].RDHR >> 0;
+//     globalCANdata[2].data[5] = CAN1->sFIFOMailBox[0].RDHR >> 8;
+//     globalCANdata[2].data[6] = CAN1->sFIFOMailBox[0].RDHR >> 16;
+//     globalCANdata[2].data[7] = CAN1->sFIFOMailBox[0].RDHR >> 24;
 
 //     mailboxFLAG = 2;
 //   }
-
 
 //   if (mailboxFLAG == 0)
 //   {
 //       CAN2->sTxMailBox[0].TIR = (( 0x142801B0 << 3 ) | 0x4);
 //       //CAN2->sTxMailBox[0].TIR = (( 0x3b << 21 ) | 0x0 );
 //       CAN2->sTxMailBox[0].TDTR = ( CAN2->sTxMailBox[0].TDTR & (unsigned long)0xfffffff0)| 0x5;
+      
 //       CAN2->sTxMailBox[0].TDLR = ((uint32_t)globalCANdata[0].data[0] << 0 | 
-//                                               (uint32_t)globalCANdata[0].data[1] << 8 |
-//                                               (uint32_t)globalCANdata[0].data[2] << 16 |
-//                                               (uint32_t)globalCANdata[0].data[3] << 24 ) ;
+//                                   (uint32_t)globalCANdata[0].data[1] << 8 |
+//                                   (uint32_t)globalCANdata[0].data[2] << 16 |
+//                                   (uint32_t)globalCANdata[0].data[3] << 24 ) ;
 //       CAN2->sTxMailBox[0].TDHR = ((uint32_t)globalCANdata[0].data[4] << 0 | 
-//                                               (uint32_t)globalCANdata[0].data[5] << 8 |
-//                                               (uint32_t)globalCANdata[0].data[6] << 16 |
-//                                               (uint32_t)globalCANdata[0].data[7] << 24 ) ;
+//                                   (uint32_t)globalCANdata[0].data[5] << 8 |
+//                                   (uint32_t)globalCANdata[0].data[6] << 16 |
+//                                   (uint32_t)globalCANdata[0].data[7] << 24 ) ;
 //       CAN2->sTxMailBox[0].TIR |= 0x1;
 //   }
 
 //   else if (mailboxFLAG == 1)
 //   {
-//       CAN2->sTxMailBox[0].TIR = (( 0x142801B1 << 3 ) | 0x4);     
+//       CAN2->sTxMailBox[0].TIR = (( 0x142802B1 << 3 ) | 0x4);     
 //       //CAN2->sTxMailBox[0].TIR = (( 0x3cb << 21 ) | 0x0 );
 
 //       CAN2->sTxMailBox[0].TDTR = ( CAN2->sTxMailBox[0].TDTR & (unsigned long)0xfffffff0) | 0x7;
 
 //       CAN2->sTxMailBox[0].TDLR = ((uint32_t)globalCANdata[1].data[0] << 0 | 
-//                                               (uint32_t)globalCANdata[1].data[1] << 8 |
-//                                               (uint32_t)globalCANdata[1].data[2] << 16 |
-//                                               (uint32_t)globalCANdata[1].data[3] << 24 ) ;
+//                                   (uint32_t)globalCANdata[1].data[1] << 8 |
+//                                   (uint32_t)globalCANdata[1].data[2] << 16 |
+//                                   (uint32_t)globalCANdata[1].data[3] << 24 ) ;
 //       CAN2->sTxMailBox[0].TDHR = ((uint32_t)globalCANdata[1].data[4] << 0 | 
-//                                               (uint32_t)globalCANdata[1].data[5] << 8 |
-//                                               (uint32_t)globalCANdata[1].data[6] << 16 |
-//                                               (uint32_t)globalCANdata[1].data[7] << 24 ) ;    
+//                                   (uint32_t)globalCANdata[1].data[5] << 8 |
+//                                   (uint32_t)globalCANdata[1].data[6] << 16 |
+//                                   (uint32_t)globalCANdata[1].data[7] << 24 ) ;    
 //       CAN2->sTxMailBox[0].TIR |= 0x1;
 //   }  
 
 //   else if (mailboxFLAG == 2)
 //   {
-//       CAN2->sTxMailBox[0].TIR = (( 0x142801B2 << 3 ) | 0x4);     
+//       CAN2->sTxMailBox[0].TIR = (( 0x142803B2 << 3 ) | 0x4);     
 //       //CAN2->sTxMailBox[0].TIR = (( 0x6b2 << 21 ) | 0x0 );
 
 //       CAN2->sTxMailBox[0].TDTR = ( CAN2->sTxMailBox[0].TDTR & (unsigned long)0xfffffff0) | 0x8;
 
 //       CAN2->sTxMailBox[0].TDLR = ((uint32_t)globalCANdata[2].data[0] << 0 | 
-//                                               (uint32_t)globalCANdata[2].data[1] << 8 |
-//                                               (uint32_t)globalCANdata[2].data[2] << 16 |
-//                                               (uint32_t)globalCANdata[2].data[3] << 24 ) ;
+//                                   (uint32_t)globalCANdata[2].data[1] << 8 |
+//                                   (uint32_t)globalCANdata[2].data[2] << 16 |
+//                                   (uint32_t)globalCANdata[2].data[3] << 24 ) ;
 //       CAN2->sTxMailBox[0].TDHR = ((uint32_t)globalCANdata[2].data[4] << 0 | 
-//                                               (uint32_t)globalCANdata[2].data[5] << 8 |
-//                                               (uint32_t)globalCANdata[2].data[6] << 16 |
-//                                               (uint32_t)globalCANdata[2].data[7] << 24 ) ;   
+//                                   (uint32_t)globalCANdata[2].data[5] << 8 |
+//                                   (uint32_t)globalCANdata[2].data[6] << 16 |
+//                                   (uint32_t)globalCANdata[2].data[7] << 24 ) ;   
 //       CAN2->sTxMailBox[0].TIR |= 0x1;
 //   }  
+//       }
+//   }
 //   CAN2->TSR |= (1 << 8);
 //   CAN1->RF0R = ( CAN1->RF0R & (unsigned long)0xFFFFFFFF) | 0x20;  
 // }
+
+
+
+
+// void CAN1_RX0_IRQHandler(void)
+// {
+//   NVIC->ISER[0] = 0x10000000;
+//   CAN1->IER = 0x0;
+
+//   if ( (( CAN1->RF0R & CAN_RF0R_FULL0_Pos) == 1) || (CAN1->RF0R & CAN_RF0R_FMP0) > 0)
+//   {
+//     while( CAN1->RF0R != 0x0)
+//     {
+
+
+//   if ( CAN1_RF0R == x[0])
+//   {
+//     CAN_AddRxMessage(0);
+//     mailboxFLAG = 0;
+//   }
+
+//   else if ( CAN1_RF0R == x[1])
+//   {  
+//     CAN_AddRxMessage(1);
+//     mailboxFLAG = 1;
+//   }
+
+//   else if ( CAN1_RF0R == x[2])
+//   {  
+//     CAN_AddRxMessage(2);
+//     mailboxFLAG = 2;
+//   }
+
+//   if (mailboxFLAG == 0)
+//   {
+//     CAN_TxMessage(0,0x142801B0);
+//   }
+
+//   else if (mailboxFLAG == 1)
+//   {
+//     CAN_TxMessage(1,0x142802B0);
+//   }  
+
+//   else if (mailboxFLAG == 2)
+//   {
+//     CAN_TxMessage(2,0x142803B0);
+//   }  
+  
+//         CAN1->RF0R = ( CAN1->RF0R & (unsigned long)0xFFFFFFFF) | 0x20;
+//     }
+//   }
+//   CAN2->TSR |= (1 << 8);
+//   //CAN1->RF0R = ( CAN1->RF0R & (unsigned long)0xFFFFFFFF) | 0x20;  
+// }
+
+  void CAN2_TX_IRQHandler(void)
+  {
+      // need test
+  }
 
 

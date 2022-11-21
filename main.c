@@ -22,7 +22,6 @@ int main()
     LEDconfig();
 
     Timerconfig();
-    LED_OnOff(1);
     while(1)
     {
     }
@@ -32,8 +31,6 @@ int main()
 void TIM2_IRQHandler(void)
 {
     TIM2->SR = 0;  
-
-    LED_OnOff(0);
 }
 
 

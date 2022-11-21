@@ -1,7 +1,7 @@
 #ifndef GLOBALVARIABLE_H_
 #define GLOBALVARIABLE_H_
 
-#define debugging 1
+#define debugging   1
 
 #define BMSone      1
 #define BMStwo      2
@@ -16,5 +16,9 @@ typedef struct
 } CAN_DATA;
 
 //extern CAN_DATA globalCANdata[3];
+
+#define OBMS3B          123731968
+#define OBMS3CB         2036334592
+#define OBMS6B2         3594518528
 
 #endif
