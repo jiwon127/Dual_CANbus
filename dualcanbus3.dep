@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>5</fileVersion>
+    <fileChecksum>1209260258</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\GPIOconfig.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\Driver\nvic_stm32f10x_cl.o.rsp</file>
+            <file>$PROJ_DIR$\dualcanbus3.icf</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\source\NVICconfig.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\Driver\system_stm32f1xx.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\Driver\nvic_stm32f10x.o.rsp</file>
+            <file>$PROJ_DIR$\nvic_stm32f10x.S</file>
+            <file>$PROJ_DIR$\Debug\List\dualcanbus3.map</file>
+            <file>$TOOLKIT_DIR$\inc\c\aarch32\iccarm_builtin.h</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\Driver\stm32f105x8.o.rsp</file>
+            <file>$PROJ_DIR$\Debug\Obj\source\CANconfig.o</file>
+            <file>$PROJ_DIR$\NVICconfig.h</file>
+            <file>$PROJ_DIR$\SystemClockConfig.h</file>
+            <file>$PROJ_DIR$\nvic_stm32f10x_cl.S</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\source\GPIOconfig.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\source\TimerConfig.o</file>
+            <file>$PROJ_DIR$\tail_stm32f10x.S</file>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\Driver\nvic_stm32f10x.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\source\SystemClockConfig.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\TimerConfig.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\Driver\startup_stm32f105xc.o.rsp</file>
+            <file>$PROJ_DIR$\TimerConfig.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\Driver\startup_stm32f105xc.o</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$PROJ_DIR$\NVICconfig.c</file>
+            <file>$PROJ_DIR$\SystemClockConfig.c</file>
+            <file>$PROJ_DIR$\stm32f105x8.s</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\dualcanbus3.out</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\Driver\tail_stm32f10x.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\Driver\tail_stm32f10x.o.rsp</file>
+            <file>$PROJ_DIR$\GPIOconfig.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\Driver\head_stm32f10x.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\Driver\nvic_stm32f10x_cl.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\Driver\stm32f105x8.o</file>
+            <file>$PROJ_DIR$\head_stm32f10x.S</file>
+            <file>$PROJ_DIR$\CANconfig.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\Driver\head_stm32f10x.o.rsp</file>
+            <file>$PROJ_DIR$\mpu_armv7.h</file>
+            <file>$PROJ_DIR$\cmsis_iccarm.h</file>
+            <file>$PROJ_DIR$\startup_stm32f105xc.s</file>
+            <file>$PROJ_DIR$\stm32f1xx.h</file>
+            <file>$PROJ_DIR$\system_stm32f1xx.h</file>
+            <file>$PROJ_DIR$\cmsis_compiler.h</file>
+            <file>$PROJ_DIR$\GlobalVariable.h</file>
+            <file>$PROJ_DIR$\core_cm3.h</file>
+            <file>$PROJ_DIR$\cmsis_version.h</file>
+            <file>$PROJ_DIR$\stm32f105xc.h</file>
+            <file>$PROJ_DIR$\CANconfig.h</file>
+            <file>$PROJ_DIR$\system_stm32f1xx.c</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 38 9</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\nvic_stm32f10x.S</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 23</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 7</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\nvic_stm32f10x_cl.S</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 44</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 1</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\tail_stm32f10x.S</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 40</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 41</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 32</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 17 6 3 37 39 29 25 58 56 22 57 54 50 10 53 15 0 59 26 55</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\TimerConfig.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 19</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 58 56 22 6 3 37 39 29 57 54 50 10 53 0</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\NVICconfig.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 4</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 58 56 22 6 3 37 39 29 57 54 50 10 53</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\SystemClockConfig.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 24</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 58 56 22 6 3 37 39 29 57 54 50 10 53</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\stm32f105x8.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 45</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 12</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\dualcanbus3.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 9</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 2 13 18 32 4 30 5 24 19 33 31 11</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\GPIOconfig.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 18</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 58 56 22 6 3 37 39 29 57 54 50 10 53</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\head_stm32f10x.S</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 43</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 48</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\CANconfig.c</name>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 58 56 22 6 3 37 39 29 57 54 50 10 53 0 55</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\startup_stm32f105xc.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 30</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 27</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\system_stm32f1xx.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 5</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 52 58 56 22 6 3 37 39 29 57 54 50 10 53</file>
+                </tool>
+            </inputs>
+        </file>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\main.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\TimerConfig.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\NVICconfig.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\SystemClockConfig.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\GPIOconfig.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\CANconfig.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\system_stm32f1xx.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>[REBUILD_ALL]</name>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>

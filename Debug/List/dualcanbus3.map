@@ -1,0 +1,287 @@
+###############################################################################
+#
+# IAR ELF Linker V9.20.4.327/W64 for ARM                  21/Nov/2022  11:35:32
+# Copyright 2007-2022 IAR Systems AB.
+#
+#    Output file  =
+#        C:\Users\esllab\Documents\8.dualcanbus3\Debug\Exe\dualcanbus3.out
+#    Map file     =
+#        C:\Users\esllab\Documents\8.dualcanbus3\Debug\List\dualcanbus3.map
+#    Command line =
+#        -f
+#        C:\Users\esllab\Documents\8.dualcanbus3\Debug\Exe\dualcanbus3.out.rsp
+#        (C:\Users\esllab\Documents\8.dualcanbus3\Debug\Obj\source\CANconfig.o
+#        C:\Users\esllab\Documents\8.dualcanbus3\Debug\Obj\source\GPIOconfig.o
+#        C:\Users\esllab\Documents\8.dualcanbus3\Debug\Obj\main.o
+#        C:\Users\esllab\Documents\8.dualcanbus3\Debug\Obj\source\NVICconfig.o
+#        C:\Users\esllab\Documents\8.dualcanbus3\Debug\Obj\Driver\startup_stm32f105xc.o
+#        C:\Users\esllab\Documents\8.dualcanbus3\Debug\Obj\Driver\system_stm32f1xx.o
+#        C:\Users\esllab\Documents\8.dualcanbus3\Debug\Obj\source\SystemClockConfig.o
+#        C:\Users\esllab\Documents\8.dualcanbus3\Debug\Obj\source\TimerConfig.o
+#        --no_out_extension -o
+#        C:\Users\esllab\Documents\8.dualcanbus3\Debug\Exe\dualcanbus3.out
+#        --map
+#        C:\Users\esllab\Documents\8.dualcanbus3\Debug\List\dualcanbus3.map
+#        --config C:\Users\esllab\Documents\8.dualcanbus3\dualcanbus3.icf
+#        --no_entry --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__CPP_Runtime   = 1
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x803'ffff] { ro };
+define block CSTACK with size = 16K, alignment = 8 { };
+define block HEAP with size = 4K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'ffff] {
+          rw, block CSTACK, block HEAP };
+
+  Section          Kind         Address    Size  Object
+  -------          ----         -------    ----  ------
+"A0":                                     0x150
+  .intvec          ro code   0x800'0000   0x150  startup_stm32f105xc.o [2]
+                           - 0x800'0150   0x150
+
+"P1":                                     0x588
+  .text            ro code   0x800'0150   0x28c  CANconfig.o [3]
+  .text            ro code   0x800'03dc    0x6c  TimerConfig.o [3]
+  .text            ro code   0x800'0448    0x3c  main.o [1]
+  .text            ro code   0x800'0484    0x3c  SystemClockConfig.o [3]
+  .text            ro code   0x800'04c0    0x28  GPIOconfig.o [3]
+  .text            ro code   0x800'04e8    0x38  zero_init3.o [5]
+  .text            ro code   0x800'0520    0x28  data_init.o [5]
+  .iar.init_table  const     0x800'0548    0x10  - Linker created -
+  .text            ro code   0x800'0558    0x1e  cmain.o [5]
+  .text            ro code   0x800'0576     0x4  low_level_init.o [4]
+  .text            ro code   0x800'057a     0x4  exit.o [4]
+  .text            ro code   0x800'0580     0xa  cexit.o [5]
+  .text            ro code   0x800'058c     0xc  XXexit.o [5]
+  .text            ro code   0x800'0598    0x1c  cstartup_M.o [5]
+  .text            ro code   0x800'05b4    0x10  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'05c4    0x10  system_stm32f1xx.o [2]
+  .text            ro code   0x800'05d4     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'05d8     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'05dc     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'05e0     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'05e4     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'05e8     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'05ec     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'05f0     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'05f4     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'05f8     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'05fc     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'0600     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'0604     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'0608     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'060c     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'0610     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'0614     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'0618     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'061c     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'0620     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'0624     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'0628     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'062c     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'0630     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'0634     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'0638     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'063c     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'0640     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'0644     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'0648     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'064c     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'0650     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'0654     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'0658     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'065c     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'0660     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'0664     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'0668     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'066c     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'0670     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'0674     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'0678     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'067c     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'0680     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'0684     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'0688     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'068c     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'0690     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'0694     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'0698     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'069c     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'06a0     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'06a4     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'06a8     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'06ac     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'06b0     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'06b4     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'06b8     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'06bc     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'06c0     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'06c4     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'06c8     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'06cc     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'06d0     0x4  startup_stm32f105xc.o [2]
+  .text            ro code   0x800'06d4     0x4  startup_stm32f105xc.o [2]
+  .rodata          const     0x800'06d8     0x0  zero_init3.o [5]
+                           - 0x800'06d8   0x588
+
+"P2", part 1 of 2:                         0x20
+  .bss             zero     0x2000'0000    0x18  main.o [1]
+  .bss             zero     0x2000'0018     0x4  CANconfig.o [3]
+  .bss             zero     0x2000'001c     0x4  CANconfig.o [3]
+                          - 0x2000'0020    0x20
+
+"P2", part 2 of 2:                       0x4000
+  CSTACK                    0x2000'0020  0x4000  <Block>
+    CSTACK         uninit   0x2000'0020  0x4000  <Block tail>
+                          - 0x2000'4020  0x4000
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+   0x800'06d8   0x803'ffff  0x3'f928
+  0x2000'4020  0x2000'ffff    0xbfe0
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x20:
+          0x2000'0000  0x20
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                 ro code  ro data  rw data
+    ------                 -------  -------  -------
+command line/config:
+    ------------------------------------------------
+    Total:
+
+C:\Users\esllab\Documents\8.dualcanbus3\Debug\Obj: [1]
+    main.o                      60                24
+    ------------------------------------------------
+    Total:                      60                24
+
+C:\Users\esllab\Documents\8.dualcanbus3\Debug\Obj\Driver: [2]
+    startup_stm32f105xc.o      612
+    system_stm32f1xx.o          16
+    ------------------------------------------------
+    Total:                     628
+
+C:\Users\esllab\Documents\8.dualcanbus3\Debug\Obj\source: [3]
+    CANconfig.o                652                 8
+    GPIOconfig.o                40
+    SystemClockConfig.o         60
+    TimerConfig.o              108
+    ------------------------------------------------
+    Total:                     860                 8
+
+dl7M_tln.a: [4]
+    exit.o                       4
+    low_level_init.o             4
+    ------------------------------------------------
+    Total:                       8
+
+rt7M_tl.a: [5]
+    XXexit.o                    12
+    cexit.o                     10
+    cmain.o                     30
+    cstartup_M.o                28
+    data_init.o                 40
+    zero_init3.o                56
+    ------------------------------------------------
+    Total:                     176
+
+    Gaps                         4
+    Linker created                       16   16'384
+----------------------------------------------------
+    Grand Total:             1'736       16   16'416
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address  Size  Type      Object
+-----                       -------  ----  ----      ------
+.iar.init_table$$Base    0x800'0548         --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'0558         --   Gb  - Linker created -
+?main                    0x800'0559        Code  Gb  cmain.o [5]
+CAN1_RX0_IRQHandler      0x800'0311  0x3e  Code  Gb  CANconfig.o [3]
+CAN1_filterconfig        0x800'01e3  0x28  Code  Gb  CANconfig.o [3]
+CAN1config               0x800'0193  0x50  Code  Gb  CANconfig.o [3]
+CAN2_TX_IRQHandler       0x800'034f   0xc  Code  Gb  CANconfig.o [3]
+CAN2config               0x800'020b  0x28  Code  Gb  CANconfig.o [3]
+CAN_AddRxMessage         0x800'0233  0xd4  Code  Gb  CANconfig.o [3]
+CAN_config               0x800'0151  0x42  Code  Gb  CANconfig.o [3]
+CSTACK$$Base            0x2000'0020         --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'4020         --   Gb  - Linker created -
+GetRxIRQswitch           0x800'0307   0xa  Code  Gb  CANconfig.o [3]
+LED_OnOff                0x800'04cd  0x14  Code  Gb  GPIOconfig.o [3]
+LEDconfig                0x800'04c1   0xc  Code  Gb  GPIOconfig.o [3]
+Region$$Table$$Base      0x800'0548         --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'0558         --   Gb  - Linker created -
+RxIRQswitch             0x2000'0018   0x4  Data  Gb  CANconfig.o [3]
+SysclkConfig             0x800'0485  0x2c  Code  Gb  SystemClockConfig.o [3]
+SystemInit               0x800'05c5   0xa  Code  Gb  system_stm32f1xx.o [2]
+TIM2_IRQHandler          0x800'046d  0x10  Code  Gb  main.o [1]
+Timerconfig              0x800'03dd  0x4a  Code  Gb  TimerConfig.o [3]
+__cmain                  0x800'0559        Code  Gb  cmain.o [5]
+__exit                   0x800'058d        Code  Gb  XXexit.o [5]
+__iar_data_init3         0x800'0521  0x28  Code  Gb  data_init.o [5]
+__iar_program_start      0x800'0599        Code  Gb  cstartup_M.o [5]
+__iar_zero_init3         0x800'04e9  0x38  Code  Gb  zero_init3.o [5]
+__low_level_init         0x800'0577   0x4  Code  Gb  low_level_init.o [4]
+__vector_table           0x800'0000        Data  Gb  startup_stm32f105xc.o [2]
+_call_main               0x800'0565        Code  Gb  cmain.o [5]
+_exit                    0x800'0581        Code  Gb  cexit.o [5]
+exit                     0x800'057b   0x4  Code  Gb  exit.o [4]
+globalCANdata           0x2000'0000  0x18  Data  Gb  main.o [1]
+main                     0x800'0449  0x24  Code  Gb  main.o [1]
+testvalue               0x2000'001c   0x4  Data  Gb  CANconfig.o [3]
+
+
+[1] = C:\Users\esllab\Documents\8.dualcanbus3\Debug\Obj
+[2] = C:\Users\esllab\Documents\8.dualcanbus3\Debug\Obj\Driver
+[3] = C:\Users\esllab\Documents\8.dualcanbus3\Debug\Obj\source
+[4] = dl7M_tln.a
+[5] = rt7M_tl.a
+
+   1'736 bytes of readonly  code memory
+      16 bytes of readonly  data memory
+  16'416 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
