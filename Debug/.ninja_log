@@ -1,70 +1,93 @@
 # ninja log v5
-18	303	6906330449351425	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/Driver/startup_stm32f105xc.o	c6998b7326cb489f
-2	317	6885653262076380	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/SystemClockConfig.o	fbdbd0e348da6dfe
-2	347	6906347498235484	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/CANconfig.o	78d7661e8c4c9d54
-47	516	6885645357534504	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/Driver/system_stm32f1xx.o	2dc8c71e16cb2167
-2	649	6905348747876394	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/TimerConfig.o	5e39bec96e848702
-16	438	6885660386307153	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/GPIOconfig.o	50936a0ea6c75872
-2	525	6906339004266998	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/main.o	a988837879b3372e
-354	479	6906347499598504	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Exe/dualcanbus3.out	35250559bad05586
-18	436	6888355820449485	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/NVICconfig.o	30ddf55eaa1f8b55
-2	521	6906351762803630	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/CANconfig.o	78d7661e8c4c9d54
-527	663	6906351764291258	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Exe/dualcanbus3.out	35250559bad05586
-2	499	6906356902603948	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/CANconfig.o	78d7661e8c4c9d54
-505	628	6906356903954486	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Exe/dualcanbus3.out	35250559bad05586
-2	437	6906357674192428	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/CANconfig.o	78d7661e8c4c9d54
-444	585	6906357675767804	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Exe/dualcanbus3.out	35250559bad05586
-2	349	6906359746222222	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/CANconfig.o	78d7661e8c4c9d54
-356	488	6906359747676835	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Exe/dualcanbus3.out	35250559bad05586
-2	475	6906360240543033	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/CANconfig.o	78d7661e8c4c9d54
-480	607	6906360241913616	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Exe/dualcanbus3.out	35250559bad05586
-2	322	6906375624660779	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/CANconfig.o	78d7661e8c4c9d54
-331	456	6906375626036906	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Exe/dualcanbus3.out	35250559bad05586
-2	363	6906376316207611	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/CANconfig.o	78d7661e8c4c9d54
-371	510	6906376317742107	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Exe/dualcanbus3.out	35250559bad05586
-3	357	6906376934516670	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/CANconfig.o	78d7661e8c4c9d54
-362	499	6906376936032081	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Exe/dualcanbus3.out	35250559bad05586
-1	379	6906377232843611	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/CANconfig.o	78d7661e8c4c9d54
-387	528	6906377234431543	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Exe/dualcanbus3.out	35250559bad05586
-2	365	6906377816190058	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/CANconfig.o	78d7661e8c4c9d54
-370	515	6906377817735905	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Exe/dualcanbus3.out	35250559bad05586
-2	358	6906378235562358	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/CANconfig.o	78d7661e8c4c9d54
-365	495	6906378237061522	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Exe/dualcanbus3.out	35250559bad05586
-2	449	6906405363849350	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/CANconfig.o	78d7661e8c4c9d54
-455	581	6906405365231490	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Exe/dualcanbus3.out	35250559bad05586
-2	354	6906406131763200	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/CANconfig.o	78d7661e8c4c9d54
-361	498	6906406133253192	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Exe/dualcanbus3.out	35250559bad05586
-2	442	6906409034683890	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/CANconfig.o	78d7661e8c4c9d54
-450	573	6906409036038556	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Exe/dualcanbus3.out	35250559bad05586
-2	435	6906422521776814	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/main.o	a988837879b3372e
-19	529	6906422522714019	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/CANconfig.o	78d7661e8c4c9d54
-537	660	6906422524080218	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Exe/dualcanbus3.out	35250559bad05586
-2	422	6906427421958044	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/CANconfig.o	78d7661e8c4c9d54
-430	553	6906427423316989	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Exe/dualcanbus3.out	35250559bad05586
-2	298	6906427670956215	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/CANconfig.o	78d7661e8c4c9d54
-306	425	6906427672253448	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Exe/dualcanbus3.out	35250559bad05586
-2	439	6906431508171848	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/CANconfig.o	78d7661e8c4c9d54
-449	570	6906431509537625	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Exe/dualcanbus3.out	35250559bad05586
-2	320	6906432133251873	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/CANconfig.o	78d7661e8c4c9d54
-327	458	6906432134687720	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Exe/dualcanbus3.out	35250559bad05586
-2	316	6906432928296936	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/CANconfig.o	78d7661e8c4c9d54
-324	449	6906432929643649	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Exe/dualcanbus3.out	35250559bad05586
-2	399	6906436011019287	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/main.o	a988837879b3372e
-15	458	6906436011588035	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/CANconfig.o	78d7661e8c4c9d54
-467	591	6906436012999051	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Exe/dualcanbus3.out	35250559bad05586
-2	445	6906454467467452	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/main.o	a988837879b3372e
-18	521	6906454468225112	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/CANconfig.o	78d7661e8c4c9d54
-529	663	6906454469697166	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Exe/dualcanbus3.out	35250559bad05586
-2	324	6906455003320751	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/main.o	a988837879b3372e
-18	359	6906455003659870	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/CANconfig.o	78d7661e8c4c9d54
-366	487	6906455004995732	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Exe/dualcanbus3.out	35250559bad05586
-2	432	6906465726296683	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/CANconfig.o	78d7661e8c4c9d54
-437	554	6906465727581760	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Exe/dualcanbus3.out	35250559bad05586
-183	640	6907012231617893	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/main.o	a988837879b3372e
-2	647	6907012231627867	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/GPIOconfig.o	50936a0ea6c75872
-196	695	6907012232166487	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/SystemClockConfig.o	fbdbd0e348da6dfe
-207	750	6907012232683764	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/TimerConfig.o	5e39bec96e848702
-2	276	6907012517709394	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/main.o	a988837879b3372e
-2	279	6907012984991369	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/main.o	a988837879b3372e
-2	276	6907013320161804	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Obj/source/CANconfig.o	78d7661e8c4c9d54
-284	758	6907013325008455	C:/Users/esllab/Documents/8.dualcanbus3/Debug/Exe/dualcanbus3.out	35250559bad05586
+1	2746	6932124553430323	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/Driver/system_stm32f1xx.o	3d043277721b3b28
+455	1442	6933000349325777	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/main.o	922008c02e53eef8
+1	65	6932125007674015	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/Driver/startup_stm32f105xc.o	90f2f05320c41586
+417	1890	6932124553260794	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/SystemClockConfig.o	b2a72eaed4da8887
+2	638	6933005675823976	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+1298	3183	6932124553699613	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/GPIOconfig.o	a5e811bc3d009e76
+2331	3334	6932124567743683	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/NVICconfig.o	c688492934551c21
+884	1477	6933000349664888	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/TimerConfig.o	21f83566c6e83648
+646	797	6933005677453886	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+1	723	6933040246766680	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+731	898	6933040248561891	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+1	728	6933042718870037	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+736	887	6933042720506031	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+1	720	6933043840816514	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+728	889	6933043842541914	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+1	753	6933047254516911	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+760	911	6933047256135292	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+2	622	6933048251085575	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+629	784	6933048252740778	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+1	636	6933048661738566	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+644	794	6933048663360687	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+1	784	6933097750812792	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+792	945	6933097752485087	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+429	1101	6933098458588640	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/main.o	922008c02e53eef8
+2	1119	6933098458738240	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+1126	1278	6933098460393443	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+2	725	6933164218310462	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+733	886	6933164219966547	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+2	630	6933165351586623	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+638	787	6933165353178736	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+1	1040	6933170218206588	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+414	1050	6933170218246467	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/main.o	922008c02e53eef8
+1061	1223	6933170220101494	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+1	708	6933174317403288	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+718	882	6933174319188182	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+1	621	6933177319110146	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+628	779	6933177320724845	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+1	713	6933178533620974	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+722	886	6933178535375906	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+2	707	6933184516237330	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+715	882	6933184518012595	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+2	1671	6940868008762574	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+1681	2172	6940868013687484	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+239	685	6989262435565805	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/TimerConfig.o	21f83566c6e83648
+236	693	6989262435565805	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/main.o	922008c02e53eef8
+7	731	6989262436044536	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+1	225	6989262704521010	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/main.o	922008c02e53eef8
+230	291	6989262705189214	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+17	282	6989263979607473	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/main.o	922008c02e53eef8
+6	349	6989263980305598	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+355	433	6989263981143369	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+93	476	7017786005115154	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/main.o	922008c02e53eef8
+12	504	7017786005406602	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+510	730	7017786007631946	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+5	329	7017809430402083	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+337	423	7017809431379736	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+21	1186	7022032678275488	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+1195	1549	7022032681883086	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+3	355	7022033398527341	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+365	474	7022033399752813	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+2	296	7022033825974409	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+305	372	7022033826775278	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+2	363	7022039566815500	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+369	477	7022039567996618	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+3	376	7022041467735622	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+385	457	7022041468568717	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+2	296	7022041991461604	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+304	411	7022041992648476	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+2	447	7022043326579890	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+468	612	7022043328314809	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+3	431	7022044289856748	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+441	530	7022044290923900	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+2	303	7022044829765939	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+312	381	7022044830607226	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+2	347	7022045460949611	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+356	420	7022045461756203	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+2	566	7022046707427003	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+574	658	7022046708404401	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+3	294	7022047321274798	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+302	456	7022047322926894	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+3	486	7022049892523470	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+494	575	7022049893480918	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+5	359	7022051190451556	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+368	437	7022051191348860	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+1	268	7022051657570567	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+276	379	7022051658717136	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+5	422	7022070873975844	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+429	499	7022070874833547	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+2	241	7022071064710420	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+248	324	7022071065518279	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8
+2	510	7022077043029251	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Obj/source/CANconfig.o	85d6cf3a65cd85ff
+519	581	7022077043775936	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/Exe/dualcanbus3.out	2dee0741b0c8ebf8

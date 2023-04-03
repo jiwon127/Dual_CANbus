@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\esllab\Documents\8.dualcanbus3\settings\dualcanbus3.Debug.general.xcl" --backend -f "C:\Users\esllab\Documents\8.dualcanbus3\settings\dualcanbus3.Debug.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "C:\Users\Kim Jaemin\Desktop\DCB\Dual_CANbus\settings\dualcanbus3.Debug.general.xcl" --backend -f "C:\Users\Kim Jaemin\Desktop\DCB\Dual_CANbus\settings\dualcanbus3.Debug.driver.xcl" 
 }
 else
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "C:\Users\esllab\Documents\8.dualcanbus3\settings\dualcanbus3.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\esllab\Documents\8.dualcanbus3\settings\dualcanbus3.Debug.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "C:\Users\Kim Jaemin\Desktop\DCB\Dual_CANbus\settings\dualcanbus3.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\Kim Jaemin\Desktop\DCB\Dual_CANbus\settings\dualcanbus3.Debug.driver.xcl" 
 }

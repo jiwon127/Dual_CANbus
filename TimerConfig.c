@@ -38,8 +38,6 @@ void Timerconfig(void)
     NVIC->ISER[0] |= (1 << 28);
     TIM2->SR = 0;
     TIM2->CR1 = 0x0005;
-
-
 }
 
 void Delay_us_irq(void)

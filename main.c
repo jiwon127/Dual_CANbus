@@ -19,10 +19,8 @@ int main()
 
     SysclkConfig();
     CAN_config();
-    LEDconfig();
-
-    Timerconfig();
-    while(1)
+    
+   while(1)
     {
     }
     //return 0;

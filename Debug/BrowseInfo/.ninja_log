@@ -1,76 +1,96 @@
 # ninja log v5
-17	385	6877132000000000	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/Driver/system_stm32f1xx.xcl	d0058ab6ec0ec818
-64	440	6877132000000000	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/source/TimerConfig.xcl	2678eaa1569c07b5
-247	416	6907011494500495	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3_part0.pbi	be9aed9cb85a1898
-589	2221	6907011512019910	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3.pbw	359eccf1b8ffbc98
-3	220	6885658983072140	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/source/GPIOconfig.pbi	fb5d9afbaa0cbaa8
-4	250	6877142739338425	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/Driver/system_stm32f1xx.pbi	44735a1c58fa145e
-422	583	6907011496177413	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3.pbd	c0f792515bc9df04
-2	258	6907011492797335	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/main.pbi	bf833ab04a481c59
-49	410	6877132000000000	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/source/GPIOconfig.xcl	2addc31eec8a1d17
-2	341	6877132000000000	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/source/CANconfig.xcl	ab4fdc6e74f7c901
-248	432	6905327091436793	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3_part1.pbi	c1f02d8231ecf270
-348	663	6877132010000000	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/source/SystemClockConfig.xcl	6597a2cd545f6106
-15	243	6907011492767439	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/source/CANconfig.pbi	5d611f49b6be2ea2
-80	465	6877132000000000	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/main.xcl	8987579c9e76e257
-2	215	6885653256754508	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/source/SystemClockConfig.pbi	e8121f5aa10b2ff8
-19	244	6905327089552707	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/source/TimerConfig.pbi	34eabfb3fb90f4c0
-261	343	6907011493778801	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3_part2.pbi	6e27543200ed072b
-33	363	6877132000000000	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/source/NVICconfig.xcl	ca2c5d604a8fc371
-16	241	6888355868352762	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/source/NVICconfig.pbi	2f4496ea272b9a76
-2	220	6907011565501683	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/main.pbi	bf833ab04a481c59
-224	319	6907011566452732	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3_part2.pbi	6e27543200ed072b
-325	484	6907011568140708	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3.pbd	c0f792515bc9df04
-488	2224	6907011585091066	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3.pbw	359eccf1b8ffbc98
-2	240	6907011638818304	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/main.pbi	bf833ab04a481c59
-24	253	6907011638858196	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/source/TimerConfig.pbi	34eabfb3fb90f4c0
-244	329	6907011639725364	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3_part2.pbi	6e27543200ed072b
-13	362	6907011640052702	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/source/CANconfig.pbi	5d611f49b6be2ea2
-259	429	6907011640716558	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3_part1.pbi	c1f02d8231ecf270
-366	531	6907011641741169	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3_part0.pbi	be9aed9cb85a1898
-536	682	6907011643248257	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3.pbd	c0f792515bc9df04
-686	2261	6907011658555926	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3.pbw	359eccf1b8ffbc98
-2	225	6907011711997978	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/main.pbi	bf833ab04a481c59
-227	316	6907011712922834	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3_part2.pbi	6e27543200ed072b
-319	466	6907011714423335	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3.pbd	c0f792515bc9df04
-470	2113	6907011730457558	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3.pbw	359eccf1b8ffbc98
-3	230	6907011783904531	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/main.pbi	bf833ab04a481c59
-15	243	6907011783934436	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/source/CANconfig.pbi	5d611f49b6be2ea2
-24	247	6907011783934436	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/source/GPIOconfig.pbi	fb5d9afbaa0cbaa8
-234	317	6907011784787960	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3_part2.pbi	6e27543200ed072b
-251	413	6907011785744032	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3_part0.pbi	be9aed9cb85a1898
-420	586	6907011787471626	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3.pbd	c0f792515bc9df04
-591	2232	6907011803378068	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3.pbw	359eccf1b8ffbc98
-3	216	6907011908274303	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/source/SystemClockConfig.pbi	e8121f5aa10b2ff8
-220	395	6907011910064464	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3_part1.pbi	c1f02d8231ecf270
-399	573	6907011911846982	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3.pbd	c0f792515bc9df04
-577	2197	6907011927668771	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3.pbw	359eccf1b8ffbc98
-2	214	6907011981066613	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/source/TimerConfig.pbi	34eabfb3fb90f4c0
-218	378	6907011982719589	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3_part1.pbi	c1f02d8231ecf270
-383	530	6907011984236629	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3.pbd	c0f792515bc9df04
-533	2222	6907012000763431	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3.pbw	359eccf1b8ffbc98
-2	215	6907012508146976	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/source/CANconfig.pbi	5d611f49b6be2ea2
-218	374	6907012509731199	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3_part0.pbi	be9aed9cb85a1898
-379	531	6907012511309073	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3.pbd	c0f792515bc9df04
-13	225	6907012567077708	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/source/CANconfig.pbi	5d611f49b6be2ea2
-2	239	6907012567117610	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/main.pbi	bf833ab04a481c59
-242	324	6907012568065476	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3_part2.pbi	6e27543200ed072b
-229	392	6907012568754447	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3_part0.pbi	be9aed9cb85a1898
-398	546	6907012570299089	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3.pbd	c0f792515bc9df04
-551	2156	6907012585860167	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3.pbw	359eccf1b8ffbc98
-2	229	6907012992832827	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/main.pbi	bf833ab04a481c59
-232	315	6907012993703988	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3_part2.pbi	6e27543200ed072b
-320	469	6907012995244764	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3.pbd	c0f792515bc9df04
-476	2104	6907013011083180	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3.pbw	359eccf1b8ffbc98
-2	206	6907013165360385	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/source/CANconfig.pbi	5d611f49b6be2ea2
-210	371	6907013167003851	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3_part0.pbi	be9aed9cb85a1898
-376	524	6907013168549213	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3.pbd	c0f792515bc9df04
-2	1557	6907013235498264	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3.pbw	359eccf1b8ffbc98
-2	208	6907013338944993	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/source/CANconfig.pbi	5d611f49b6be2ea2
-212	366	6907013340516963	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3_part0.pbi	be9aed9cb85a1898
-371	518	6907013342044170	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3.pbd	c0f792515bc9df04
-522	2135	6907013357734617	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3.pbw	359eccf1b8ffbc98
-2	218	6907013613168302	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/source/CANconfig.pbi	5d611f49b6be2ea2
-223	393	6907013614928840	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3_part0.pbi	be9aed9cb85a1898
-399	559	6907013616584619	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3.pbd	c0f792515bc9df04
-563	2143	6907013632011333	C:/Users/esllab/Documents/8.dualcanbus3/Debug/BrowseInfo/dualcanbus3.pbw	359eccf1b8ffbc98
+262	406	7022073663288694	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3_part0.pbi	b06fd21db18a8e2b
+1	265	6989258576407503	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/source/TimerConfig.pbi	945bae2d6b1c188c
+16	837	6932124580000000	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/source/NVICconfig.xcl	ae05aa0bb2ae577c
+553	1445	7022073673386083	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbw	e03deb947a08c9
+844	1138	6932124583784430	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/source/NVICconfig.pbi	a347f8d9c7b926fb
+226	296	7017762733301270	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3_part2.pbi	25ab3935e168f1fb
+43	858	6932124580000000	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/source/CANconfig.xcl	6d01f4f3a4ca0dd5
+1142	1753	6932124590000000	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/source/TimerConfig.xcl	f13623b08f484c76
+1	801	6932124580000000	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/Driver/system_stm32f1xx.xcl	27f62570ed872e9e
+807	1498	6932124580000000	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/source/SystemClockConfig.xcl	bc09dd4d59999783
+414	549	7022073664724820	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbd	223c595751b3855f
+1159	1433	6932124586716577	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/Driver/system_stm32f1xx.pbi	d4d0d6dcecef5d9c
+2	257	7022073661565529	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/source/CANconfig.pbi	16c23fa1c5b33d32
+27	818	6932124580000000	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/source/GPIOconfig.xcl	c42c8ab747e7696
+1507	1805	6932124590356840	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/source/SystemClockConfig.pbi	6ca8041249501950
+826	1469	6932124580000000	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/main.xcl	c185db3659fc3b19
+1437	1710	6932124589499141	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/source/GPIOconfig.pbi	c0c25ac10be989a5
+270	448	6989258578579713	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3_part1.pbi	9713a99dd7b85614
+1	222	7017762732359477	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/main.pbi	ef92fd644789571
+1	234	7022073878868051	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/source/CANconfig.pbi	16c23fa1c5b33d32
+239	385	7022073880623470	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3_part0.pbi	b06fd21db18a8e2b
+392	530	7022073882069513	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbd	223c595751b3855f
+535	1483	7022073891303659	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbw	e03deb947a08c9
+2	397	7022075061972669	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/source/CANconfig.pbi	16c23fa1c5b33d32
+400	544	7022075063687604	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3_part0.pbi	b06fd21db18a8e2b
+550	689	7022075065133680	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbd	223c595751b3855f
+694	1608	7022075074022388	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbw	e03deb947a08c9
+2	260	7022075178523678	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/source/CANconfig.pbi	16c23fa1c5b33d32
+265	416	7022075180332121	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3_part0.pbi	b06fd21db18a8e2b
+421	561	7022075181788223	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbd	223c595751b3855f
+567	1637	7022075192180443	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbw	e03deb947a08c9
+2	247	7022075245691141	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/source/CANconfig.pbi	16c23fa1c5b33d32
+252	406	7022075247502549	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3_part0.pbi	b06fd21db18a8e2b
+410	548	7022075248938711	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbd	223c595751b3855f
+553	1883	7022075261971406	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbw	e03deb947a08c9
+2	248	7022075315403184	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/source/CANconfig.pbi	16c23fa1c5b33d32
+253	401	7022075317176715	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3_part0.pbi	b06fd21db18a8e2b
+407	546	7022075318622847	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbd	223c595751b3855f
+550	1595	7022075328781301	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbw	e03deb947a08c9
+2	263	7022075586236203	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/source/CANconfig.pbi	16c23fa1c5b33d32
+268	420	7022075588051324	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3_part0.pbi	b06fd21db18a8e2b
+425	564	7022075589497555	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbd	223c595751b3855f
+570	1552	7022075599046225	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbw	e03deb947a08c9
+2	253	7022075956933236	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/source/CANconfig.pbi	16c23fa1c5b33d32
+258	403	7022075958663896	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3_part0.pbi	b06fd21db18a8e2b
+409	544	7022075960079737	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbd	223c595751b3855f
+551	1439	7022075968727249	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbw	e03deb947a08c9
+2	263	7022076123577015	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/source/CANconfig.pbi	16c23fa1c5b33d32
+268	409	7022076125268583	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3_part0.pbi	b06fd21db18a8e2b
+413	547	7022076126656033	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbd	223c595751b3855f
+553	1522	7022076136104411	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbw	e03deb947a08c9
+2	245	7022076189699665	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/source/CANconfig.pbi	16c23fa1c5b33d32
+249	392	7022076191413096	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3_part0.pbi	b06fd21db18a8e2b
+398	531	7022076192799021	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbd	223c595751b3855f
+535	1540	7022076202592626	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbw	e03deb947a08c9
+2	234	7022076408356995	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/source/CANconfig.pbi	16c23fa1c5b33d32
+238	381	7022076410058745	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3_part0.pbi	b06fd21db18a8e2b
+387	520	7022076411454621	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbd	223c595751b3855f
+528	1393	7022076419877136	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbw	e03deb947a08c9
+2	260	7022076523436138	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/source/CANconfig.pbi	16c23fa1c5b33d32
+265	427	7022076525450752	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3_part0.pbi	b06fd21db18a8e2b
+435	593	7022076527106299	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbd	223c595751b3855f
+600	1905	7022076539822641	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbw	e03deb947a08c9
+5	461	7022076850236744	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/source/CANconfig.pbi	16c23fa1c5b33d32
+467	720	7022076853083702	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3_part0.pbi	b06fd21db18a8e2b
+729	972	7022076855596958	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbd	223c595751b3855f
+979	2319	7022076868762357	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbw	e03deb947a08c9
+5	403	7022076924390051	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/source/CANconfig.pbi	16c23fa1c5b33d32
+407	569	7022076926324782	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3_part0.pbi	b06fd21db18a8e2b
+577	715	7022076927790916	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbd	223c595751b3855f
+722	1757	7022076937880849	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbw	e03deb947a08c9
+5	446	7022078527061759	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/main.pbi	ef92fd644789571
+469	628	7022078529276258	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3_part2.pbi	25ab3935e168f1fb
+632	774	7022078530742299	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbd	223c595751b3855f
+780	2080	7022078543331182	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbw	e03deb947a08c9
+5	459	7022078753449032	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/source/CANconfig.pbi	16c23fa1c5b33d32
+464	615	7022078755274533	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3_part0.pbi	b06fd21db18a8e2b
+622	851	7022078757638155	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbd	223c595751b3855f
+857	1977	7022078768518751	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbw	e03deb947a08c9
+4	300	7022078822447085	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/source/CANconfig.pbi	16c23fa1c5b33d32
+306	460	7022078824297528	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3_part0.pbi	b06fd21db18a8e2b
+466	642	7022078826122376	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbd	223c595751b3855f
+650	2925	7022078848267535	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbw	e03deb947a08c9
+1	242	7022079004059840	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/source/CANconfig.pbi	16c23fa1c5b33d32
+247	421	7022079006106198	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3_part0.pbi	b06fd21db18a8e2b
+427	577	7022079007660507	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbd	223c595751b3855f
+583	1928	7022079020484508	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbw	e03deb947a08c9
+5	445	7022079077209790	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/source/CANconfig.pbi	16c23fa1c5b33d32
+450	596	7022079078974728	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3_part0.pbi	b06fd21db18a8e2b
+602	750	7022079080520584	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbd	223c595751b3855f
+757	1807	7022079090765141	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbw	e03deb947a08c9
+3	356	7022079401204569	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/source/CANconfig.pbi	16c23fa1c5b33d32
+362	520	7022079403100663	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3_part0.pbi	b06fd21db18a8e2b
+527	676	7022079404645376	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbd	223c595751b3855f
+684	2155	7022079419136956	C:/Users/Kim Jaemin/Desktop/DCB/Dual_CANbus/Debug/BrowseInfo/dualcanbus3.pbw	e03deb947a08c9

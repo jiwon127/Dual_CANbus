@@ -1,14 +1,11 @@
 #ifndef GLOBALVARIABLE_H_
 #define GLOBALVARIABLE_H_
 
-#define debugging   1
+#define debugging   0
 
 #define BMSone      1
 #define BMStwo      2
-#define BMSthree    3
-#define BMSfour     4
-#define BMSfive     5
-#define BMSsix      6
+#define BMSfour     3
 
 typedef struct
 {
